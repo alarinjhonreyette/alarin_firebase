@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyC7P00phr6m_kf8OI0S9dhWnpxYA1KGeO4",
     authDomain: "alarin-firebase.firebaseapp.com",
     projectId: "alarin-firebase",
@@ -11,6 +11,6 @@ var firebaseConfig = {
     measurementId: "G-2Z5BB8BJLZ"
   };
 
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
